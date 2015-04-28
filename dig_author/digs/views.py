@@ -10,7 +10,6 @@ from django import forms
 # Create your views here.
 def index(request):
 	if request.method == 'POST':
-		#try:
 		anchor_yyNo = request.POST['anchor_yyNo']
 		if anchor_yyNo.isdigit() and len(anchor_yyNo) < 20:
 			try:
